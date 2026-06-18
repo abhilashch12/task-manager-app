@@ -15,7 +15,7 @@ function App() {
   console.log(tasks);
   const filteredtasks = useMemo(()=>{
      let filtered=tasks;
-  filtered= filtered.filter((task)=>(task.title.includes(search)));
+  filtered= filtered.filter((task)=>(task.title.toLowerCase().includes(search.toLowerCase())));
   if(filter==="active"){
     filtered=filtered.filter((task)=>(!task.completed));
   }
@@ -43,7 +43,7 @@ function App() {
      <TaskForm />
      {filteredtasks.length===0?(<EmptyState message={message}/>):<TaskList tasks={filteredtasks}/>}
      <SearchInput search={search} setSearch={setSearch} filter={filter} setFilter={setFilter}  />
-     <TaskStats  filteredtasks={filteredtasks}/>
+     <TaskStats  tasks={tasks}/>
     </div>
   );
 }

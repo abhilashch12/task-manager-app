@@ -8,7 +8,10 @@ const {toggleTask,deleteTask}=useTaskContext();
             <h2>title:{task.title}</h2>
             <span>priority:{task.priority}</span>
             <p>dueDate:{task.dueDate}</p>
-            <button onClick={(e)=>{e.stopPropagation();deleteTask(task.id)}}>delete</button>
+            <button onClick={() => {if (window.confirm("Delete this task?")) {
+    deleteTask(task.id)
+  }
+}}>delete</button>
             </article>
         </div>
     )

@@ -1,7 +1,7 @@
-function TaskStats({filteredtasks}){
-  const total = filteredtasks.length;
-  const completed = filteredtasks.filter((task)=>(task.completed)).length;
-  const remaining = filteredtasks.filter((task)=>(!task.completed)).length;
+function TaskStats({tasks}){
+  const total = tasks.length;
+  const completed = tasks.filter((task)=>(task.completed)).length;
+  const remaining = tasks.filter((task)=>(!task.completed)).length;
 
     return(
         <div>
