@@ -1,16 +1,128 @@
-# React + Vite
+# 📝 Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Task Manager application built with **React** that helps users organize and manage their daily tasks efficiently. The application supports task creation, completion tracking, searching, filtering, dark mode, and persistent storage using Local Storage.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://abhilashch12.github.io/task-manager-app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ➕ Add new tasks
+- ✅ Mark tasks as completed
+- 🗑️ Delete tasks
+- 🔍 Search tasks by title
+- 📂 Filter tasks (All, Active, Completed)
+- 🌙 Light/Dark Theme
+- 💾 Persistent storage using Local Storage
+- 📊 Task Statistics (Total, Completed, Remaining)
+- 📱 Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React
+- JavaScript (ES6+)
+- Context API
+- Custom Hooks
+- useLocalStorage
+- CSS
+- Vite
+- Git
+- GitHub Pages
+
+---
+
+## 📸 Screenshot
+
+![Task Manager Screenshot](./screenshots/screenshot.png)
+
+---
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/abhilashch12/task-manager-app.git
+```
+
+Go to the project directory
+
+```bash
+cd task-manager-app
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build the project
+
+```bash
+npm run build
+```
+
+Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+task-manager-app
+│
+├── public
+├── screenshots
+│   └── screenshot.png
+├── src
+│   ├── components
+│   ├── context
+│   ├── hooks
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🎯 What I Learned
+
+- Building reusable React components
+- Managing state with Context API
+- Creating custom hooks
+- Using Local Storage for data persistence
+- Form validation
+- Search and Filter functionality
+- Conditional Rendering
+- Git & GitHub workflow
+- Deploying React applications using GitHub Pages
+
+---
+
+## 👨‍💻 Author
+
+**Abhilash Reddy**
+
+GitHub: https://github.com/abhilashch12
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
